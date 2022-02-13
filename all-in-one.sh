@@ -2,7 +2,7 @@
 
 
 # GIT CLONE
-git clone https://github.com/dan-emmanuel/thrive.git
+git clone https://github.com/dan-emmanuel/thiveDx
 
 # createuser db
 createdb -U postgres csNews
