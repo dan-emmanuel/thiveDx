@@ -1,0 +1,19 @@
+.form-control::placeholder {
+  color: #2B2B2B;
+  font: normal normal normal 18px/19px Roboto;
+  opacity: 0.48;
+}
+
+form .form-control, form .form-select{
+  border-radius: 3px;
+  min-height: 58px;
+}
+
+.modal .modal-content form{
+  width: 599px;
+  min-height: 70vh ;
+}
+
+textarea{
+  height: 197px;
+}

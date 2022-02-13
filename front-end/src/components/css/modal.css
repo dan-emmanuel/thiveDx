@@ -1,0 +1,47 @@
+.modal-header small {
+  display: block;
+
+}
+
+
+.modal .modal-header, .modal .modal-footer {
+  border: 0;
+  justify-content: center;
+  margin-top: 0;
+}
+
+
+.modal .modal-footer button {
+  background-color: #0E0DFF;
+  border-radius: 10px;
+}
+
+.modal .modal-footer button:disabled {
+  opacity: 0.32;
+}
+#createPostModal .modal-content {
+  width: 774px;
+  min-height: max-content;
+  border-radius: 21px;
+
+}
+
+.modal .modal-header .btn-close {
+  margin: -0.5rem auto -0.5rem -0.5rem;
+  color: #D6D6D6;
+}
+
+.modal .modal-header .modal-title {
+  font: normal normal 900 30px/21px Roboto;
+  color: #2B2B2B;
+}
+
+small .subtitle {
+  font: normal normal normal 18px/19px Roboto;
+}
+
+
+select option {
+  font: normal normal bold 18px/19px Roboto;
+  color: #2B2B2B;
+}

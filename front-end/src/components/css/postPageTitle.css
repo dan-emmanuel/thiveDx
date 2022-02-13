@@ -1,0 +1,13 @@
+#newpostButton {
+  background: #0E0DFF 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  font: normal normal normal 16px/21px Roboto;
+}
+
+h1.firstTitle {
+  text-align: left;
+  font:  normal normal 900 30px/21px Roboto;;
+  letter-spacing: 0px;
+  color: #2B2B2B;
+  opacity: 1;
+}

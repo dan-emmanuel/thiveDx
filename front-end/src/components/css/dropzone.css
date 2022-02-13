@@ -1,0 +1,14 @@
+#dropZone{
+  width: 599px;
+  height: 151px;
+}
+
+
+.imgName{
+  width: auto;
+  background-color: #F3F3F3;
+}
+.dropZoneText{
+  font: normal normal normal 26px/27px Roboto;
+  opacity: 0.51;
+}

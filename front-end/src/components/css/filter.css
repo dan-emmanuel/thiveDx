@@ -1,0 +1,20 @@
+
+.btn.catBtn {
+  background: #DCDCDC 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 24px;
+  opacity: 1;
+  border: 0;
+  font : normal normal normal 16px/19px Roboto;;
+
+}
+
+.btn.catBtn.selected,.btn.catBtn.selected:focus {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  color: #0E0DFF;
+  border: 0;
+  box-shadow: 0px 3px 6px #00000029;
+  font : normal normal bold 16px/19px Roboto;
+
+}
+

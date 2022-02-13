@@ -1,0 +1,52 @@
+.card img.mainImg {
+  width: 241px;
+  height: 231px;
+}
+
+.card-subtitle img {
+  width: 14px;
+}
+
+.card-subtitle {
+  text-align: left;
+  text-decoration: underline;
+  letter-spacing: 0px;
+  color: #2B2B2B;
+  opacity: 1;
+  font: normal normal 300 16px/21px Roboto ;
+
+}
+
+
+.card .card-title {
+ 
+  font: normal normal medium 22px/18px Roboto;
+}
+.card .card-text {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #2B2B2B;
+  opacity: 1;
+  font: normal normal 300 16px/19px Roboto;
+}
+
+.list-group-item.postContainer, .list-group-item.postContainer .card.post {
+  border: 0;
+}
+
+.list-group-item .borderBottom:not(.list-group-item:last-of-type .borderBottom) {
+  border-bottom: 2px solid #D8D8D8;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 80%;
+}
+
+.dateDiv {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #9C9C9C;
+  opacity: 0.47;
+  font : normal normal 300 16px/19px Roboto;
+}
+
