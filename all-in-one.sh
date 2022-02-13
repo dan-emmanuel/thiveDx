@@ -11,7 +11,7 @@ psql -h 127.0.0.1 -d csNews -U postgres -f ./thrive/script.sql
 
 
 # NPM INSTALL BE
-cd ./thrive/backend
+cd ./thriveDx/backend
 npm install
 # NPM INSTALL FE
 cd ../front-end
