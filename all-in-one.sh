@@ -7,7 +7,7 @@ git clone https://github.com/dan-emmanuel/thiveDx
 # createuser db
 createdb -U localHost csNews
 
-psql -h 127.0.0.1 -d csNews -U localHost -f ./thrive/script.sql
+psql -h 127.0.0.1 -d csNews -U localHost -f ./thiveDx/script.sql
 
 
 # NPM INSTALL BE
