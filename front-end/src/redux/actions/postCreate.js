@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const CHANGE_A_VALUE = "CHANGE_A_VALUE",
-    NEW_POST = "NEW_POST"
+GET_ARTS= "GET_ARTS"
 
 
 
@@ -27,7 +27,7 @@ export const submit_form = (e) => async (dispatch) => {
             data: e
         });
         dispatch({
-            type: NEW_POST,
+            type: GET_ARTS,
             payload: cats.data
         })
     } catch (error) {

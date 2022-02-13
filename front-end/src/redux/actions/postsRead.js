@@ -22,13 +22,13 @@ export const getTags = () => async (dispatch) => {
 }
 export const getPosts = () => async(dispatch)=>{
     try {
-        let tags = await axios({
+        let posts = await axios({
             method: 'get',
             url: `${process.env.REACT_APP_SRV_URL}articles`,
         });
         dispatch({
             type: GET_ARTS,
-            payload: tags.data
+            payload: posts.data
         })
     } catch (error) {
         console.log(error)

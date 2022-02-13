@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import FormCreator from './FomCreator'
-import {submit_form} from '../redux/actions/postCreate'
+import {submit_form,change_a_value} from '../redux/actions/postCreate'
 
 import "./css/modal.css"
 
@@ -13,7 +13,7 @@ import "./css/modal.css"
 
 
 let CreatePostModal = (props) => {
-  let { title,category,tag,content,img,submit_form,...otherProps } = props
+  let { title,category,tag,content,img,submit_form,change_a_value,tags,cats,...otherProps } = props
   let submitForm = ()=>{
     let formData = new FormData()
     formData.append("content",content)
@@ -23,6 +23,11 @@ let CreatePostModal = (props) => {
     formData.append("img",img)
     submit_form(formData)
     props.onHide()
+    change_a_value({ name: "category", value: cats[0].id })
+    change_a_value({ name: "tag", value: tags[0].id })
+    change_a_value({ name: "content", value: "" })
+    change_a_value({ name: "title", value: "" })
+
   }
   return (
     <>
@@ -68,7 +73,9 @@ let mapStateToProps = (({ postsRead, postCreate }) => {
 
 let mapDispatchToProps = (dispatch => {
   return {
-    submit_form: (datas) => dispatch(submit_form(datas))
+    submit_form: (datas) => dispatch(submit_form(datas)),
+    change_a_value: (e) => dispatch(change_a_value(e))
+
   };
 })
 

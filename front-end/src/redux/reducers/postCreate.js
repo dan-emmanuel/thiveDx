@@ -1,6 +1,5 @@
 import {
-  CHANGE_A_VALUE,
-  NEW_POST
+  CHANGE_A_VALUE
 } from '../actions/postCreate'
 
 const initState = {
@@ -16,7 +15,6 @@ const initState = {
 export const postCreateReducers = (state = initState, action) => {
   switch (action.type) {
     case CHANGE_A_VALUE : return { ...state,[action.payload.name]:action.payload.value }
-    case NEW_POST : return { ...state}
 
     default: return { ...state }
   }
