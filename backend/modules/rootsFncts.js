@@ -5,7 +5,7 @@ const fsPromises = require('fs').promises;;
 // upload file middleware strategy
 const imgStorage = multer.diskStorage({
   destination: function(req, file, cb) {
-    cb(null, 'upload')
+    cb(null, `uploads`)
   },
   filename: function(req, file, cb) {
     cb(null, new Date().toISOString() + file.originalname.replace(/ /g, ''))
@@ -24,10 +24,12 @@ const createNewPost = async (req, res) => {
   try {
     let { body: { content, title, tag, category }, file } = req
     let newFilePath = `articleImg/${file.filename}`
+
     await fsPromises.rename(file.path, `./public/${newFilePath}`)
     await DB.createArticle({ content, title, tag, category, img: newFilePath })
-    return getArticles(req, res)
+    return await getArticles(req, res)
   } catch (error) {
+    console.log(error)
 
   }
 
